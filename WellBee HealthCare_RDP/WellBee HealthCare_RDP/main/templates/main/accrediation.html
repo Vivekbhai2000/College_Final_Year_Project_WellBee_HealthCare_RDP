@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accreditation</title>
+    <style>
+        .header {
+            background-color: #b30202;
+            padding: 10px;
+            text-align: center;
+            margin: -10px;
+        }
+
+        .bold_font {
+            font-family: sans-serif;
+            color: white;
+            font-size: 14px;
+        }
+
+        .simple_font {
+            font-family: sans-serif;
+            color: black;
+            font-size: 0px;
+        }
+
+        .dash_box {
+            border-radius: 5px;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: justify;
+        }
+
+        #block_container {
+            text-align: center;
+        }
+
+        #bloc1, #bloc2, #bloc3, #bloc4, #bloc5 {
+            display: inline-flex;
+            border: 2.5px solid #e72222;
+            border-radius: 5px;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: justify;
+            margin: 15px;
+            background-color: whitesmoke;
+        }
+
+        #image {
+            display: inline;
+            margin: 32px;
+        }
+
+        #image1 {
+            display: inline;
+            margin: 32px;
+        }
+
+        #image2 {
+            display: inline;
+            margin: 32px;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+    <h3 class="header bold_font" style="font-size: 40px;">WellBee HealthCare | Accreditation</h3>
+    <br>
+
+    <div id="block_container">
+
+
+
+
+
+        <p class="bold_font" style="font-weight: bold; color: black;"><br><br></p>
+        <div id="bloc1">
+            <p id="image">
+                <!--  <img src="iso.png" alt="Girl in a jacket" width="150" height="100"> -->
+                <img src="{% static 'main/images/iso.png' %}" alt="ISO" title="ISO IMAGE" width="150" height="100" />
+            </p>
+
+        </div>
+
+        <div id="bloc2">
+            <p id="image">
+                <img src="{% static 'main/images/nabl.png' %}" alt="NABL" title="NABL IMAGE" width="150" height="100" />
+                <!--   <img src="nabl.png" alt="Girl in a jacket" width="150" height="100"> -->
+            </p>
+
+        </div>
+
+        <div id="bloc3">
+            <p id="image1">
+                <img src="{% static 'main/images/icmr.png' %}" alt="ICMR" title="ICMR IMAGE" width="150" height="100" />
+                <!--<img src="icmr.png" alt="Girl in a jacket" width="150" height="100"> -->
+            </p>
+
+        </div>
+
+        <div id="bloc4">
+            <p id="image2">
+                <img src="{% static 'main/images/cap.png' %}" alt="CAP" title="CAP IMAGE" width="150" height="100" />
+                <!-- <img src="cap.png" alt="Girl in a jacket" width="150" height="100"> -->
+            </p>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

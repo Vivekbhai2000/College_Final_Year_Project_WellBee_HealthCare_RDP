@@ -1,0 +1,1486 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>About Us</title>
+
+        <!-- Bootstrap -->
+        
+        
+        <link rel="stylesheet" type="text/css" href="{% static 'main/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'main/css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap" rel="stylesheet">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
+
+
+    <style> 
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+a, a:hover {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+    transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="date"]:focus, select:focus, textarea:focus {
+    outline: none
+}
+::-webkit-input-placeholder {
+    opacity:1;
+    font-family: 'Montserrat', sans-serif;
+    color:#c8c8c8;
+    font-size:13px;
+    letter-spacing:1px;
+}
+:-moz-placeholder {
+    opacity:1;
+    font-family: 'Montserrat', sans-serif;
+    color:#c8c8c8;
+    font-size:13px;
+    letter-spacing:1px
+}
+::-moz-placeholder {
+    opacity:1;
+    font-family: 'Montserrat', sans-serif;
+    color:#c8c8c8;
+    font-size:13px;
+    letter-spacing:1px
+}
+:-ms-input-placeholder {
+    opacity:1;
+    color:#c8c8c8;
+    font-size:13px;
+    letter-spacing:1px
+}
+textarea:focus::-webkit-input-placeholder {
+    color:transparent;
+}
+textarea:focus:-moz-placeholder {
+    color:transparent;
+}
+textarea:focus::-moz-placeholder {
+    color:transparent;
+}
+textarea:focus:-ms-input-placeholder {
+    color:transparent;
+}
+input[type="button"], input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+body {
+    font-family: 'Montserrat', sans-serif;    
+    font-weight: bold;
+    overflow-x: hidden;
+}
+.form-group {
+    position: relative;
+}
+.form-group label.error{
+    font-size: 10px;
+    position: absolute;
+    font-weight: 300;
+    color: #f00;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.pad0 {
+    padding: 0px;
+}
+.mar0 {
+    margin: 0px;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both
+}
+.clearfix {
+    /*position: relative;*/
+}
+.clear {
+    clear: both;
+}
+.disnon {
+    display: none
+}
+.disblk {
+    display: block
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.headercall{
+    background: #b30202;
+    color: #fff;
+}
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+.headercall p{
+    font-size: 15px;
+    margin: 0;
+    font-weight: normal;
+    padding: 10px;
+}
+.headercall p span{
+    font-weight: bold;
+    color: #ffcb08;
+    letter-spacing: 1px;
+}
+.logo{
+    padding: 0px 15px;
+}
+.logo a{
+    display: inline-block;
+}
+.logo img {
+        width: auto;
+    max-width: 295px;
+}
+.text-left .footer-box{
+    padding-left: 145px
+}
+.banner_form{
+    background: url('../images/banner_1.jpg')no-repeat;
+    background-position: center left;
+}
+.banner_form.covid-banner{
+    background-image: url("../images/covid-banner.jpg") !important;
+    background-position: center left;
+}
+.banner_content{
+    text-align: center;
+    padding: 4% 0 5% 10%;
+}
+.banner_content_top h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #b30202;
+    text-shadow: 0px 1px #ffffff;
+    font-size: 35px;
+    margin: 20px 0px 0;
+}
+.banner_content_top p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 26px;
+}
+.h_test_detail{
+    padding: 0 0 0 15%;
+}
+.healthkind{
+    color: #fff;
+    float: left;
+    width: 25%;
+    margin: 1%;
+    padding: 3% 2% 2%;
+    border-radius: 8px;
+}
+.healthkind1{
+    background: #e30101;
+}
+.healthkind2{
+    background: #bc0101;
+}
+.healthkind3{
+    background: #940101;
+}
+.healthkind .h_title{
+    margin: 0 0 3px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 22px;
+}
+.healthkind .h_test{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 12px;
+}
+.h_p{
+    font-size: 17px;
+    font-weight: normal;
+    border-top: 1px dashed;
+    border-bottom: 1px dashed;
+    padding: 10px 0;
+    line-height: 11px;
+}
+.healthkind .h_price{
+    line-height: 11px;
+    text-decoration: line-through;
+}
+.healthkind .nowat{
+    font-size: 10px;
+    line-height: 22px;
+    text-decoration: none;
+}
+.healthkind .finalprice{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    text-decoration: none;
+}
+.formdiv{
+    background: #fff;
+    margin-top: -453px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    padding: 20px;
+    position: relative;
+    z-index: 9;
+}
+.formdiv h1{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 3% 0 5%;
+}
+.form-control{
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 0px;
+    height: 25px;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: normal;
+    outline-style: none;
+    margin: 0 0 1%;
+    box-shadow: none !important;
+}
+.plbtn{
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    background: transparent;
+    margin: 5% 0 0;
+}
+.health_packages{
+    background: #C8DAE8;
+    padding: 5% 0;
+}
+.hp_div{
+    background: #fff;
+    float: left;
+    padding: 30px 10px;
+    border-radius: 8px;
+    color: #000;
+    position: relative;
+}
+.hp_div h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight:700;
+}
+.hp_div img{
+    margin: 0 auto;
+    max-width:180px;
+}
+.health_packages1 .test_details{
+    min-height: 370px;
+}
+.test_details{
+    min-height: auto;
+    margin: 3% 0 0;
+}
+.hp_desc p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+}
+.test_price{
+    text-align: center;
+    padding: 25px 0px;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+}
+.test_price_red{
+    color: #FF7938;
+    font-weight: normal;
+    font-style: italic;
+    border-bottom: 1px dashed #000;
+    padding: 0 0 5px;
+    margin: 0 0 5px;
+    font-size: 13px;
+}
+.reg-pack .col-md-12 .row{
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+}
+.reg-pack .col-md-12 .row .hp_div{
+    height: 100%;
+    position: relative;
+    padding-bottom: 115px;
+}
+
+.reg-pack .col-md-12 .row>div{
+    margin-bottom: 50px;
+}
+.d-flex{
+    display: flex;
+}
+.row.d-flex p {
+    font-size: 18px;
+    line-height: 23px;
+}
+.offerings .d-flex{
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+.offerings h2 {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.test_price_p{
+    line-height: 16px;
+    margin: 0 0 10%;
+}
+.test_price_price{
+    font-size: 20px;
+    text-decoration: line-through;
+    line-height: 20px;
+}
+.test_price_nowat{
+    font-size: 11px;
+}
+.test_price_finalprice{
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 27px;
+}
+.buynow{
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.hp_div .buynow img{
+    width: 60%;
+}
+.health_packages_title h1, .benifits h1, .whypathkind h1, .offerings h1, .testimonial h1{
+    margin: 0;
+    text-align: center;
+    padding: 0% 30% 5%;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+.benifits{
+    padding: 5% 0;
+}
+.benifits img{
+    margin:0 auto;
+    width: 80%;
+}
+.benifits p{
+    text-align: center;
+    font-size: 24px;
+    color: #054166;
+    font-weight:700;
+    line-height: 30px;
+    padding: 0 15px;
+    margin: 10% 0;
+}
+.whypathkind{
+    background: #FAFAFA;
+    padding: 5% 0;
+}
+.whyp{
+    position: relative;
+    padding: 0 6%;
+    margin: 0 0 5%;
+}
+.hp_div h2 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 28px;
+}
+.whyp h2{
+    font-weight:700;
+    font-size: 22px;
+}
+.whyp h2 img{
+    position: absolute;
+    left: 7%;
+    width: 18px;
+    margin: 2px 0 0;
+}
+.whyp p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    padding: 0 30px 0 0;
+    margin: 0 0 7%;
+}
+.whyp img{
+    margin: 0 auto;
+}
+.offerings{
+    background: url('../images/bg.png')no-repeat;
+    background-size: cover;
+    padding: 50px 0 20px 0px;
+    color: #fff;
+}
+.offerings h2{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0px 35px;
+}
+.offerings img{
+    width: 45%;
+    margin: 0 auto 10px;
+}
+.testimonial{
+    background: url('../images/testi_bg.jpg')no-repeat;
+    background-size: cover;
+    padding: 5% 0 2%;
+    color: #fff;
+}
+.testi-person img{
+    margin: 0 auto;
+    width: 20%;
+}
+.social-list{
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+.banner-btn-box img{
+    margin: 0px auto 0 auto;
+    max-width: 190px;
+    padding: 5px 0px 0px 0px;
+}
+.banner-btn-box{
+     height: 100%;
+    display: flex;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    -ms-align-items: flex-end;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    padding-bottom: 82px;
+    padding-right: 160px;
+}
+
+.banner-btn-box a{
+    display: inline-block;
+    margin-top: 15px;
+}
+
+
+.social-row{
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+}
+.social-list i{
+    font-size: 16px;
+}
+.social-list .fa-facebook:hover{
+    color: #4267b2;
+}
+.social-list .fa-twitter:hover{
+    color: #00acee;
+}
+.social-list .fa-instagram:hover{
+    color: #7f1734;
+}
+.social-list .fa-linkedin:hover{
+    color: #0e76a8;
+}
+.social-row a{
+   padding: 3px 12px;
+}
+/* quote */
+.quote-image {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    width: 80px;
+}
+.quote-image img{
+    width: 20px;
+}
+/* text-style */
+.testimonial-style .testimonial-caption-style {
+    bottom: 40%;
+    text-shadow: none;
+    top: 0%;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 25px;
+    padding: 0;
+}
+.testimonial-style .testimonial-authors {
+    margin-top: 25px;
+    font-size: 17px;
+    font-weight:700;
+    margin-bottom: 0;
+}
+.fancybox-slide--image {
+    padding: 15px 0px;
+}
+.test_details .col-md-12.pad0 .hp_head p{
+    margin-bottom: 4px;
+}
+.fancy-btn{
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: #b30202;
+    font-weight: 500;
+    color: #fff !important;
+    font-size: 12px;
+    padding: 6px 10px 6px 15px;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    text-decoration: none;
+}
+
+/* carousel-height-control */
+.testimonial-style .testimonial-loc{
+    font-size: 14px;
+    font-style: italic;
+}
+.testimonial-style .carousel-inner > .item {
+    padding-top: auto;
+    padding-bottom: auto;
+    height: 310px;
+}
+/* carousel-left-right-control */
+.testimonial-style .carousel-control.left {
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+}
+.testimonial-style .carousel-control.right {
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+}
+.testimonial-style .carousel-control {
+    color: #354052;
+}
+.testimonial-style .carousel-control:hover {
+    color: #354052;
+    text-decoration: none;
+    transition: background-color 1s ease;
+}
+/* indicators */
+.testimonial-style .carousel-indicators .active {
+    background-color: #fff;
+    width: 14px;
+    height: 14px;
+    transition: background 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.testimonial-style .carousel-indicators li {
+    border: 2px solid #354052;
+    background-color: #354052;
+}
+.glyphicon-chevron-left:before, .glyphicon-chevron-right:before {
+    content: " ";
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev{
+    top: 30%;
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev{
+    left: 180%;
+}
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next{
+    right: 180%;
+}
+.glyphicon img{
+    width: 11px;
+}
+.call{
+    background: #ffffff;
+    padding: 5% 0;
+    position: relative;
+}
+.call_icon{
+    text-align: center;
+    z-index: 1;
+}
+.call_icon img{
+    width: 110px;
+}
+.foolinks{
+    padding: 50px;
+    border: 1px solid #b30202;
+    border-radius: 8px;
+    margin: -23px 50px 0;
+    width: 90%;
+}
+.foo{
+    background: url(../images/footer_icon.png)no-repeat;
+    height: 50px;
+    background-size: 100% 100%;
+    color: #fff;
+    background-position-x: 0px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 28px;
+    padding: 10px;
+    width: 31%;
+    margin: 0 1%;
+}
+.footer{
+    background: #13161F;
+    padding: 10px 0 8px 0;
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+}    
+.footer p {
+    margin: 0;
+    font-size: 10px;
+}
+.arrow {
+    text-align: center;
+    margin: 1% 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.bounce{
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+.form-horizontal{
+    position: relative;
+}
+.closep{
+    display: none;
+    color: #fff;
+    opacity: 1;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-weight: normal;
+    background: #000;
+    padding: 6px 9px 10px;
+    line-height: 10px;
+    border-radius: 14px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.book_a_test_btn {
+    text-align: center;
+    }
+.book_a_test_btn p {
+    margin: 0 0 5px;
+    color: #b30202;
+}
+.book_a_test_btn img {
+       margin: 0 auto;
+       cursor: pointer;
+    }
+
+.reg-pack .col-md-12 .col-md-3{
+    padding: 0px 5px;
+}
+.reg-pack .col-md-12 .col-md-3 .hp_div {
+    padding: 30px 5px;
+}
+.reg-pack .col-md-12 .col-md-3 .hp_div .hp_head p{
+    font-size: 14px;
+}
+.reg-pack .col-md-12 .col-md-3 .hp_div .hp_desc{
+    padding: 0px 5px;
+}
+h1{
+    text-align: center;
+}
+
+
+.main-banner-slider,.main-banner-slider .item{
+    height: 524px;
+}
+.banner-slide{
+    position: relative;
+}
+.banner-slide .banner_form-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    width: 100%;
+    z-index: 999;
+}
+
+
+/*loader starts*/
+.main-loader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #fff;
+    z-index: 9999;
+     display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+}
+.main-loader .box{
+     display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+}
+.benifits-slide.owl-carousel .owl-item img{
+    width: 38%;
+    margin-bottom: 15px;
+}
+.loader-03 {
+  border: 8px solid #b30202;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: 1s loader-03 linear infinite;
+          animation: 1s loader-03 linear infinite;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0;
+}
+
+@-webkit-keyframes loader-03 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-03 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.box {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+}
+.covid-inner ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.covid-box{
+    background-color: #b30202;
+    padding: 45px 0px 55px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+.covid-box h1 {
+    margin-bottom: 35px;
+    color: #fff;
+}
+
+.covid-inner ul li{
+    flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0px 10px;
+    padding: 15px 5px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.covid-inner ul li.confirm{
+    color: #b30202;
+}
+.covid-inner ul li.new-case{
+    color: #f18f00;
+}
+.covid-inner ul li.recover-case{
+    color: #0d7d16;
+}
+.covid-inner ul li.decrese{
+    color: #7f016c;
+}
+.covid-inner ul li.sample-test{
+    color: #1f00c6;
+}
+
+.covid-inner ul li span{
+    display: block;
+    font-size: 14px;
+    color: #000;
+}
+.main-footer{
+    background-color: #191d2a;
+}
+.hp_div .pop{
+    position: absolute;
+    background-color: #b30202;
+    color: #fff;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    top: 17px;
+    left: -23px;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 3px 30px 4px 30px;
+}
+.hp_div .pop:before,.hp_div .pop:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.hp_div .pop:before{
+    border-top: 4px solid #C8DAE8;
+    border-left: 22px solid #C8DAE8;
+    border-right: 0px solid transparent;
+    border-bottom: 23px solid transparent;
+    left: -1px;
+    bottom: 0;
+}
+.hp_div .pop:after{
+    border-top: 26px solid #C8DAE8;
+    border-left: 26px solid transparent;
+    border-right: 0px solid #C8DAE8;
+    border-bottom: 0px solid #C8DAE8;
+    right: -1px;
+    bottom: -1px;
+}
+.footer-box ul{
+	padding: 0;
+	list-style: none;
+}
+.footer-box ul li,.footer-box ul li a,.footer-box ul li i{
+	color: #fff;
+	font-weight: 300;
+	font-size: 16px;
+}
+.footer-box ul li a:hover,.footer-box ul li a:focus{
+	color: #b30202
+}
+.footer-box ul li{
+	line-height: 28px;
+	margin-bottom: 15px;
+}
+.main-footer{
+	padding: 45px 0px 35px 0px;
+}
+.footer-box h4{
+	font-weight: 700;
+	color: #fff;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+.footer-social{
+	text-align: center;
+}
+.footer-social li a{
+	padding: 5px 8px;
+}
+.footer-social ul{
+	justify-content: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+}
+
+/*loader ends*/
+
+
+
+
+/*RESPONSIVE CSS*/
+
+@media Screen and (max-width: 767px){
+    .banner_content {
+    padding: 0;
+   }
+   .formdiv h1 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    width: 100%;
+    text-align: center;
+    word-wrap: initial;
+    height: auto;
+  }
+  .form_btn{
+    text-align: center;
+  }
+  .healthkind{
+    float: none;
+    width: 31%;
+    margin: 0px 2px;
+    display: inline-block;
+  }
+  .banner_content_top h1 {
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 75px;
+    font-weight: 700;
+    margin: 8px 0px 0;
+  }
+  .banner_content_top p {
+    font-size: 14px;
+    padding-left: 75px;
+   }
+   .h_test_detail {
+    padding: 0;
+    margin-top: 40px;
+    }
+   .h_test_detail {
+    padding: 0;
+  }
+  .formdiv {
+    padding: 20px !important;
+    margin-top: 0px;
+  }
+  .closep{
+    display: none !important;
+  }
+  .form-horizontal{
+    padding:0px !important;
+  }
+  .form-control{
+    height: 40px;
+  }
+  .plbtn{
+    outline: none;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .bounce{
+    display: none;
+  }
+  .health_packages_title h1, .benifits h1, .whypathkind h1, .offerings h1, .testimonial h1 {
+    font-size: 24px;
+    line-height: 34px;
+    padding: 0px;
+    margin-bottom: 15px;
+  }
+  .health_packages1 .test_details {
+    min-height: auto;
+  }
+  .hp_div {
+    margin-bottom: 45px;
+  }
+  .hp_div h1 {
+    font-size: 22px;
+   }
+   .test_details .col-md-12.pad0{
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+   }
+   .reg-pack .col-md-12 .row {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    padding: 0px 23px;
+   }
+   .test_details {
+    min-height: auto;
+  }
+  .hp_div h1 br,.hp_div h2 br {
+    display: none;
+  }
+  .d-flex {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+  }
+  .row.d-flex p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  h1 {
+    font-size: 26px;
+    line-height: 33px
+  }
+  .whyp p {
+    padding: 0;
+    font-size: 16px;
+  }
+  h2 .bullet{
+    display: none;
+  }
+  .offerings .col-md-4 {
+    width: 50%;
+   }
+   .offerings h2 {
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 8px;
+  }
+  .offerings img {
+    margin: 0 auto 5px;
+   }
+   p.msg {
+    font-size: 16px;
+  }
+  .testimonial-style .carousel-inner > .item {
+    height: 310px;
+   }
+   .foolinks {
+    margin: 0 auto;
+    padding: 50px 15px 15px 15px;
+   }
+   .foo {
+    width: 100%;
+    margin: 0px 0px 15px 0px;
+   }
+   .call_icon img {
+    margin-bottom: -30px;
+   }
+   .footer p {
+    margin: 0;
+    font-size: 10px;
+   }
+   .hp_div > img {
+    max-width: 130px;
+   }
+   .reg-pack .col-md-12 .row > .col-md-3 {
+    margin-bottom: 40px;
+   }
+   .banner_div{
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+   }
+   .logo img {
+    width: auto;
+    max-width: 215px;
+   }
+   .banner_form {
+    background-size: contain;
+   }
+   .pack-box>.row{
+      padding: 0px !important;
+   }
+
+   .healthkind .h_title {
+    font-size: 12px;
+     min-height: 88px; 
+   }
+   .social-row a {
+    padding: 3px 5px;
+   }
+   .social-row{
+    padding: 0px;
+   }
+   .headercall p {
+    padding: 10px 2px;
+    flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    text-align: left;
+    font-size: 14px;
+   }
+   .main-banner-slider, .main-banner-slider .item {
+    height: 440px;
+   }
+   .banner-slide .banner_form-box {
+      position: static;
+    transform: none;
+    top: initial;
+    left: initial;
+  }
+  .mail-row{
+    display: none;
+   }
+.banner-btn-box {
+    padding-right: 0px;
+}
+.covid-inner ul{
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+.covid-inner ul li{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.covid-inner ul li:last-child{
+    margin-bottom: 0px;
+}
+.footer-social {
+    padding-left: 0px;
+    text-align: left;
+}
+.footer-social ul{
+	justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+	-moz-justify-content: flex-start;
+	-ms-justify-content: flex-start;
+}
+.footer-box h4{
+	margin-bottom: 20px;
+}
+.main-footer .text-right{
+	text-align: left !important;
+}
+.text-left .footer-box{
+    padding-left: 0px
+}
+.main h1{
+	text-align:left;
+	font-family:Arial;
+}
+.main p{
+	margin-left: 5px;
+}
+.cert{
+	margin-left:5px;
+	
+}
+/*RESPONSIVE CSS*/
+</style>
+    </head>
+    <body>
+
+        
+        
+        <header>
+            <div class="container-fluid">
+                <div class="row headercall">
+                    <div class="logo">
+                       <div class="wrapper">
+                        <div class="col-md-12 text-right social-row">
+                            <p>Call Us : <span><a href="tel:8097720779">+91-80-97-72-07-79</a></span></p>
+                            <ul class="social-list">
+                              <li><a href="https://www.facebook.com/wellbee2020/">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                              </a></li>
+                              <li>
+                                <a href="https://www.instagram.com/wellbee_healthcare/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                              </li>
+                              <li><a href="https://twitter.com/WellBeeHealthc3?s=08">
+                                <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                              </li>
+                              <li><a href="https://www.linkedin.com/in/wellbee-healthcare-63a9511b0">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="row logo">
+                    <div class="wrapper">
+                        <div class="col-md-12">
+                            <a href="index.html"><img src="images/logo.png" alt="logo" title="logo" class="img-responsive"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+	    <div class="main">
+		<h1>?? About Us</h1>
+		<p style="font-family:calibri">WellBee HealthCare Solutions is a one-click platform to avail variety of healthcare services available on PAN-India. 
+		The main aim of the organization is to have a society wherein we can help in case of any shortage of Blood, Plasma Donors, Assistance to trace Bed availabilites on call, Covid Vaccination Registration and Tracker. 
+		Since 2019, we are providing diagnostic services which includes normal routine blood test. We are happy to announce that this is one of the fastest growing E-commerce diagnostic company as we have started providing Covid-19 test and Machinery Test(PET-CT SCAN & CT Scan) for major cities of India since 2020.</p>
+		<h1>?? OUR MISSION</h1>
+		<p style="font-family:calibri">Our mission is to be a Trusted Brand having PAN-India footprint, making superior quality diagnostic service provider accessible to the populace through affordable and comfortable means. WellBee Healthcare is a boon which makes your diagnostic need easier. WellBee Healthcare has contributed their operations with 1400+ services in Delhi, Mumbai, Pune, Bangalore and many more. We are one-stop shop which provides diagnostic services throughout the nation.</p>
+		<h1>?? MENTORS</h1>
+		<p style="color:#b30202">? Mr. Vishal Singh (Founder & CEO)</p>
+		<p style="font-family:script"><i>"Hire people who have obsession towards their work, who live and breath it, Get your whole company on board. Always convey more than awaited."</i></p>
+		<p style="color:#b30202">? Ms. Shalini Singh (Chief Operating Officer)</p>
+		<p style="font-family:script"><i>"To be successful you have to create your own opportunity and no Academic Degree is going to do it for you."</i></p>
+		<h1>?? IT TEAM</h1>
+		<p style="color:#b30202">? Mr. Suraj Jha</p>
+		<p style="font-family:script"><i>"Business is my passion, Engineering is my profession"</i></p>
+		<p style="color:#b30202">? Mr. Abhishek Singh</p>
+		<p style="font-family:script"><i>"Sincere efforts is the best business plan."</i></p>
+		<h1>?? ACCREDIATION</h1>
+		<p style="font-family:calibri">To get Certified Reports with:-</p>
+		<div class="row">
+		<div class="col cert">
+			<img src="images/cert.png" class="img-responsive"/>
+        </div>
+		</div>
+		</div>
+		<!--main-end-->
+		<!-- footer -->
+        <div class="main-footer">
+            <div class="container">
+                <div class="footer-inner">
+                    <div class="row">
+                       <div class="col-lg-5 col-md-5 col-xs-12">
+                           <div class="footer-box">
+                               <h4>Contact Us</h4>
+                                <ul>
+                                 <li><i class="fa fa-map-marker" aria-hidden="true"></i> Plot no 13, Jmd Complex, Sec 48,<br/>Beside Jmd Gallaria, Gurgaon<br/> Haryana 122018.</li>
+                                 
+                                 <li><i class="fa fa-globe" aria-hidden="true"></i> <a href="http://www.wellbeehealthcare.com/">www.wellbeehealthcare.com</a></li>
+                             </ul>
+                           </div>
+                       </div> 
+
+                       <div class="col-lg-2 col-md-2 col-xs-12">
+                           <div class="footer-box footer-social">
+                               <h4>Follow Us</h4>
+                               <ul class="social-list">
+                              <li><a href="https://www.facebook.com/wellbee2020/">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                              </a></li>
+                              <li>
+                                <a href="https://www.instagram.com/wellbee_healthcare/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                              </li>
+                              <li><a href="https://twitter.com/WellBeeHealthc3?s=08">
+                                <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                              </li>
+                              <li><a href="https://www.linkedin.com/in/wellbee-healthcare-63a9511b0">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            </ul>
+                           </div>
+                       </div> 
+
+                       <div class="col-lg-5 col-md-5 col-xs-12 text-left">
+                           <div class="footer-box">
+                               <h4>Connect With Us</h4>
+                                <ul>
+                                 <li><i class="fa fa-mobile" aria-hidden="true"></i> <a href="tel:+918097720779">+91-80-97-72-07-79</a></li>
+                                 <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@wellbeehealthcare.com">info@wellbeehealthcare.com</a></li>
+                                 <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:wellbeehealthcare@gmail.com">wellbeehealthcare@gmail.com</a></li>
+                             </ul>
+                           </div>
+                       </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>&copy <span id="demo-year"></span> - WellBee HealthCare. All Rights Reserved<a target="_blank" href="http://www.prettifycreative.com/"></a> </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/default.js"></script>
+        <script>
+ 
+           
+            function checkdisplaytype(){
+                var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                if (isMobile) {
+                    window.open('tel:+918097720779');
+                } else {
+                    alert("Call Us @ +91-80-97-72-07-79");
+                }
+            }
+        </script>
+
+
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/additional-methods.min.js"></script>
+<script src="js/validation.js"></script>
+<script src="plugins/fancybox/jquery.fancybox.js"></script>
+<script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+<script>
+function myFunction() {
+  var d = new Date();
+  var n = d.getFullYear();
+  document.getElementById("demo-year").innerHTML = n;
+}
+window.onload = function() {
+  myFunction();
+};
+</script>
+<!-- <script>
+
+ $(".btn-up").click(function() {
+        $("html").animate({ scrollTop: 0 }, 1200);
+        }); 
+</script> -->
+
+
+<script>
+    $('.main-banner-slider').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:false,
+    autoplay:true,
+    smartSpeed:800,
+    responsive:{
+        0:{
+            items:1
+        },
+    }
+});
+
+$('.benifits-slide').owlCarousel({
+    loop:true,
+    margin:45,
+    autoplay:true,
+    smartSpeed:800,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+    }
+})    
+
+$(document).ready(function(){$(".main-loader").fadeOut(3000);});  
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/60c1ac8765b7290ac6352635/1f7q8jt1h';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+    </body>
+</html>

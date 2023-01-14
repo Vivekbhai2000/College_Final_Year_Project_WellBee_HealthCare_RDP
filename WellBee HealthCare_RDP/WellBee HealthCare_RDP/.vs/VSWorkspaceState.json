@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\main\\static\\main",
+    "\\main\\static\\main\\assets",
+    "\\main\\templates\\main",
+    "\\saler",
+    "\\saler\\templates",
+    "\\saler\\templates\\saler",
+    "\\wrappers"
+  ],
+  "SelectedNode": "\\saler\\templates\\saler\\ambulance_booking.html",
+  "PreviewInSolutionExplorer": false
+}
